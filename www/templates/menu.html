@@ -1,0 +1,47 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-assertive">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+
+        </ion-nav-bar>
+
+        <ion-nav-view name="menuContent"></ion-nav-view>
+
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar-assertive">
+            <h1 class="title">Collect Lab</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item>
+                    <a class="item item-avatar" href="#">
+                        <img ng-src="{{currentUser.picture}}">
+                        <h2>{{currentUser.name}}</h2>
+                        <p>{{currentUser.email}}</p>
+                    </a>
+                </ion-item>
+                <ion-item menu-close href="#/app/page1">
+                    page1
+                </ion-item>
+                <ion-item menu-close href="#/app/page2">
+                    page2
+                </ion-item>
+                <ion-item menu-close href="#/app/list">
+                    list
+                </ion-item>
+                <ion-item menu-close ng-click="logout()">
+                    <i class="icon ion-power"></i> Sair
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
