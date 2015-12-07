@@ -96,7 +96,7 @@ angular.module('lab.services', [])
                     params += '&scope=' + encodeURIComponent(options.scope);
                     var authUrl = 'https://accounts.google.com/o/oauth2/auth?' + params;
 
-                    var win = window.open(authUrl, '_blank', 'location=no,toolbar=no,width=800, height=800');
+                    var win = window.open(authUrl, '_blank', 'location=no,toolbar=no,clearsessioncache=yes,clearcache=yes,&approval_prompt=force&response_type=token,width=800,height=800');
                     var context = this;
 
                     if (ionic.Platform.isWebView()) {
