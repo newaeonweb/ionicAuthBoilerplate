@@ -61,8 +61,8 @@ angular.module('lab.services', [])
 
         var access_token = false;
         var redirect_url = 'http://localhost/callback';
-        var client_id = '836933074591-du4ab0ffmdi1rotcnvh36uhfs197ju2u.apps.googleusercontent.com';
-        var secret = '_md1t4CNIWZ5l1RnWgXKjrYm';
+        var client_id = 'xxx';
+        var secret = 'xxx';
         var scope = 'https://www.googleapis.com/auth/urlshortener https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/plus.me';
         var gulp = function (url) {
             url = url.substring(url.indexOf('?') + 1, url.length);
